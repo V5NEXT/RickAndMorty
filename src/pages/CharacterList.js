@@ -11,11 +11,8 @@ const searchItems = (searchValue) => {
 
 const {error,data,loading} = useCharacters();
 
-if(loading) return <div><button type="button" className="bg-indigo-500 ..." disabled>
-                        <svg className="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
-                        </svg>
-                        Loading...
-                        </button></div>
+if(loading) return <div className="w-12 h-12 rounded-full animate-spin
+border-2 border-solid border-blue-500 border-t-transparent"></div>
 
 if(error) return <div>Errrorrrr....</div>
 
