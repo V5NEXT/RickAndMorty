@@ -9,11 +9,23 @@ query {
         name
         image
         type
+        status
         
       }
     }
 }
 `
+
+// const GET_SPECIFIC_CHARACTER = gql`
+// query{
+//   characters{
+//     name = name
+
+//   }
+
+// }
+
+// `
 
 
 
@@ -23,3 +35,9 @@ const {error, data, loading} = useQuery(GET_CHARACTERS);
 
 return {error,data,loading};
 }
+
+// export const useSpecificCharacter = (name) => {
+//   const {error, data, loading}= useQuery(name);
+
+//   return {error, data, loading};
+// }

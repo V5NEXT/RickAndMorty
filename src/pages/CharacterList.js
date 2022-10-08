@@ -25,7 +25,7 @@ if(error) return <div>Errrorrrr....</div>
     <div className="flex flex-wrap space-x-4">
      
       {data.characters.results.map((character) =>{
-        return <CharacterCard className="" key={character.id} characters={character} />
+        return <CharacterCard className="max-h-full" key={character.id} characters={character} />
       })}
     </div>
     </div>
